@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-    <header class="border-bottom border-light p-0 mb-0 bg-primary text-white text-center ">
+    <!-- <header class="border-bottom border-light p-0 mb-0 bg-primary text-white text-center ">
         <h1 class="margin_0" >Bienvenido {user}</h1>
-    </header>
+    </header> -->
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="home.html">Inicio</a>
@@ -21,25 +21,35 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Desempeño</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
+                <a class="navbar-brand" aria-current="page" href="usuarios.html">Usuarios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <button class="btn btn-dark btn-outline-light" type="submit" onclick="salir()">Salir</button>
+            <form class="d-flex d-grid gap-3" role="search">
+              <h2 class="text-light" style="font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; margin-top: .5rem;">Bienvenido Usuario</h2>
+              <!-- <button class="btn btn-dark btn-outline-light" type="submit" onclick="salir()">Salir</button> -->
+              <a href="index.html" class="btn btn-dark btn-outline-light">Salir</a>
             </form>
           </div>
         </div>
       </nav>
       
       <section class="datos align-self-start bg-light" >
-        <div class="d-flex justify-content-center pb-3 pt-3">
-            <img src="img/default-user-image.png" alt="imagen de usuario" width="200rem">
+        <div class="d-flex justify-content-around pb-3 pt-3">
+            <!-- <img src="img/default-user-image.png" alt="imagen de usuario" width="200rem">
+            <textarea name="" id="" cols="30" rows="10"></textarea> -->
+            <div class="card" style="width: 20rem;">
+              <img src="img/default-user-image.png" class="card-img-top" alt="...">
+            
+              <div class="card-body">
+                <h5 class="card-title">Resumen de desempeño</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Ver FeedBack</a>
+              </div>
+            </div>
+            
         </div>
         <div class="container text-center">
             <div class="row">
@@ -91,9 +101,9 @@
                 </div>
             </div>
         </div>
-
-        <footer class="bg-primary p-3 mt-4 text-center b">
-            <p>Castaño-2022</p>
+      </section>
+        <footer class="bg-dark p-3 mt-4 text-center b">
+            <p class="text-light">Castaño-2022</p>
         </footer>
     
     
